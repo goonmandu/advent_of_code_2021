@@ -6,7 +6,6 @@ def main():
     original_count, number_of_valids = len(binary_list), len(binary_list)
     while number_of_valids > 1:
         determinant = 0
-        recently_deleted = []
         for number in binary_list:
             try:
                 if number[current_index] == "0":
@@ -20,7 +19,6 @@ def main():
                 if (determinant > 0 and number[current_index] == "0")\
                         or (determinant < 0 and number[current_index] == "1")\
                         or (determinant == 0 and number[current_index] == "0"):
-                    recently_deleted.append(binary_list[index])
                     binary_list[index] = "0"
             except IndexError:
                 pass
@@ -35,7 +33,6 @@ def main():
     original_count, number_of_valids = len(binary_list), len(binary_list)
     while number_of_valids > 1:
         determinant = 0
-        recently_deleted = []
         for number in binary_list:
             try:
                 if number[current_index] == "0":
@@ -49,7 +46,6 @@ def main():
                 if (determinant > 0 and number[current_index] == "1")\
                         or (determinant < 0 and number[current_index] == "0")\
                         or (determinant == 0 and number[current_index] == "1"):
-                    recently_deleted.append(binary_list[index])
                     binary_list[index] = "0"
             except IndexError:
                 pass
