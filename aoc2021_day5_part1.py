@@ -14,13 +14,6 @@ def main():
             lines[index] = None
     filtered_lines = [direction for direction in lines if direction is not None]
 
-    def debug():
-        for row in range(10):
-            for column in range(10):
-                print(vent_map[row][column], end=" ")
-            print()
-        print()
-
     for two_points in filtered_lines:
         x1 = int(two_points[0][0])
         y1 = int(two_points[0][1])
