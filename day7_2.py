@@ -2,12 +2,12 @@ import math
 
 
 def main():
-    with open("AoC-D7-2.txt") as f:
+    with open("AoC-D7.txt") as f:
         crab_positions = f.readlines()[0].split(",")
     crab_positions = [int(pos) for pos in crab_positions]
     crab_positions.sort()
     mean_1 = math.floor(sum(crab_positions) / len(crab_positions))
-    mean_2 = math.ceil(sum(crab_positions) / len(crab_positions))
+    mean_2 = mean_1 + 1
     total_fuel_1, total_fuel_2 = 0, 0
     for pos in crab_positions:
         for i in range(abs(mean_1 - pos)):
