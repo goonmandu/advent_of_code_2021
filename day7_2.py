@@ -14,7 +14,7 @@ def main():
             total_fuel_1 += i + 1
         for i in range(abs(mean_2 - pos)):
             total_fuel_2 += i + 1
-    print(f"Answer is either {total_fuel_1} or {total_fuel_2}.")
+    print(f"Answer is {min(total_fuel_1, total_fuel_2)}.")
 
 
 if __name__ == "__main__":
