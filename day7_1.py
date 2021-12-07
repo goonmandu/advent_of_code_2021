@@ -2,7 +2,7 @@ import statistics
 
 
 def main():
-    with open("AoC-D7-2.txt") as f:
+    with open("AoC-D7.txt") as f:
         crab_positions = f.readlines()[0].split(",")
     crab_positions = [int(i) for i in crab_positions]
     crab_positions.sort()
