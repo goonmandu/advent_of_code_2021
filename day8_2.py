@@ -32,7 +32,7 @@ def main():
         for number in to_decode:
             concat += str(decode_key.index("".join(sorted(number))))
         sum_of_inputs += int(concat)
-    print(sum_of_inputs)
+    print(f"The sum of all four-digit numbers is {sum_of_inputs}.")
 
 
 if __name__ == "__main__":
